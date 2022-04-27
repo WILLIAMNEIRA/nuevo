@@ -3,13 +3,12 @@ header {
 }
 
 body {
-    background-image:url(/imagenes/fondo.jpg) no-repeat center top;
+    background:#000;
     margin: 0;
     padding: 0;  
     background-size: cover;
     height: 105vh;
    
-
 }
 
 .circulo{
