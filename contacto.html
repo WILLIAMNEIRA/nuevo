@@ -4,13 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="productos.css">
-    <title>Productos - Barbería Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles-productos.css">
+    <link rel="stylesheet" href="styles-home.css">
+    <title>Contacto - Barbería Alura</title>
 </head>
 <body>
     <header>
-        
+        <div class="caja">
+            <h1><img src="imagenes/logo.png"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    <main>
+        <form>
+            <label for="nombreapellidos">Ingrese Nombres y Apellidos</label>
+            <input type="text"  id="nombreapellidos">
+            <label for="correoelectronico">Ingrese Correro electronico </label>
+            <input type="text" id="correoelectronico">
+            <label for="telefono">Ingrese su Numero de Telefono</label>
+            <input type="text" id="telefono">
+
+            <input type="submit"  value="Enviar Formulario">
+
+
+        </form>
+        </main>
+    <footer>
+        <img src="imagenes/logo-blanco.png">
+        <p class="copyright">&copy; Copyright Barberia Alura  - 2022</p>
+    </footer>
     
 </body>
 </html>
