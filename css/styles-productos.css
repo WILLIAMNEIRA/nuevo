@@ -1,5 +1,6 @@
 header{
-    background-color: #bbbb;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 20%, rgba(9,9,121,1) 55%, rgba(255,0,52,1) 100%);
     padding: 20px 0;
 }
 
@@ -11,7 +12,7 @@ margin:0 0 0 15px;
 
 nav a {
     text-transform: uppercase;
-    color: #000;
+    color: #fff;
     font-size: 22px;
     font-weight: bold;
     text-decoration: none;
@@ -29,7 +30,7 @@ nav {
     right: 0;
 }
 nav a:hover{
-    color:#c78c19;
+    color:#c719b0;
     text-decoration:underline;
 }
 .productos{
@@ -50,7 +51,8 @@ nav a:hover{
     border-radius: 10px;
 }
 .productos li:hover {
-   border-color:#c78c19; 
+   border-color:#c719b0;
+   ; 
 }
 .productos li:hover h2{
     font-size: 33px;
@@ -70,7 +72,7 @@ nav a:hover{
 }
 footer{
     text-align: center;
-    background: url(imagenes/bg.jpg) ;
+    background: url(/imagenes/bg.jpg) ;
     padding: 40px;
 }
 .copyright{
@@ -88,7 +90,7 @@ form{
     
 }
 
-form label,form p{
+form label,form legend{
     display: block;
     font-size: 20px;
     margin: 0 0 10px ;
@@ -104,6 +106,33 @@ form label,form p{
 
 .checkbox{
     margin:20px 0;
+}
+
+
+.autor {
+    padding: 10px;
+}
+fieldset{
+    padding: 20px;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:#fff;
+    background: #2233c7;
+    border-radius: 5px;
+    border:none;
+    transition: 1s background ;
+   
+}
+
+.enviar:hover{
+    background: rgb(243, 5, 5);
+    color: #ffffff;
+
+    
 }
 
 

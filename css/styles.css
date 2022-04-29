@@ -3,7 +3,7 @@ header {
 }
 
 body {
-    background: #0000;
+    background: #000;
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -39,6 +39,7 @@ body {
     -webkit-mask-composite: destination-out;
     filter: hue-rotate(0);
     animation: rotate-hue normal 500MS infinite linear;
+    transition: 2s ;
 }
 
 .circulo:hover::after {
