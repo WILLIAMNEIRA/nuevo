@@ -3,75 +3,75 @@ header {
 }
 
 body {
-    background:#000;
+    background: url(/imagenes/fondo.jpg) no-repeat center top;
     margin: 0;
-    padding: 0;  
+    padding: 0;
     background-size: cover;
     height: 105vh;
-   
 }
 
-.circulo{
+.circulo {
     padding: 70px 100px;
     margin: -100px 36%;
     border-radius: 100%;
-     display: inline-block;
-     align-items: center;
-    
+    display: inline-block;
+    align-items: center;
+
 }
+
 .circulo::after {
- --m-i: linear-gradient(#000, #000);
- --m-o: content-box, padding-box;
- content: "";
- position: absolute;
- margin: -6% -20% ;
- width: 28%;
- height: 55%;
- padding: var(--border-width);
- border-radius: 100%;
- background-image: linear-gradient(0deg ,#ff0303 0%, #0028ff 100%);
- -webkit-mask-image: var(--m-i), var(--m-i);
- mask-image: var(--m-i), var(--m-i);
- -webkit-mask-origin: var(--m-o);
- mask-origin: var(--m-o);
- -webkit-mask-clip: var(--m-o);
- mask-composite: exclude;
- -webkit-mask-composite: destination-out;
- filter: hue-rotate(0);
- animation: rotate-hue normal 500MS infinite linear;
+    --m-i: linear-gradient(#000, #000);
+    --m-o: content-box, padding-box;
+    content: "";
+    position: absolute;
+    margin: -6% -20%;
+    width: 28%;
+    height: 55%;
+    padding: var(--border-width);
+    border-radius: 100%;
+    background-image: linear-gradient(0deg, #ff0303 0%, #0028ff 100%);
+    -webkit-mask-image: var(--m-i), var(--m-i);
+    mask-image: var(--m-i), var(--m-i);
+    -webkit-mask-origin: var(--m-o);
+    mask-origin: var(--m-o);
+    -webkit-mask-clip: var(--m-o);
+    mask-composite: exclude;
+    -webkit-mask-composite: destination-out;
+    filter: hue-rotate(0);
+    animation: rotate-hue normal 500MS infinite linear;
 }
 
 .circulo:hover::after {
- animation-play-state: running;
+    animation-play-state: running;
 
 }
 
 @keyframes rotate-hue {
- to {
-  filter: hue-rotate(360deg);
- }
+    to {
+        filter: hue-rotate(360deg);
+    }
 }
 
 .circulo,
 .circulo::after {
- box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .circulo:hover {
- --border-width: 10px;
- border: none;
+    --border-width: 10px;
+    border: none;
 }
 
-footer{
+footer {
     background: #000;
     text-align: center;
     margin: 250px;
     padding: 40px;
-    color:#ffff;
+    color: #ffff;
     font-family: 'Anek Telugu', sans-serif;
     font-size: 13px;
 }
 
-.autor{
+.autor {
     padding: 10px;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="css/styles-home.css">
     <title>Contacto - Barbería Alura</title>
 </head>
+
 <body>
     <header>
         <div class="caja">
@@ -25,21 +27,46 @@
     <main>
         <form>
             <label for="nombreapellidos">Ingrese Nombres y Apellidos</label>
-            <input type="text"  id="nombreapellidos">
-            <label for="correoelectronico">Ingrese Correro electronico </label>
-            <input type="text" id="correoelectronico">
-            <label for="telefono">Ingrese su Numero de Telefono</label>
-            <input type="text" id="telefono">
+            <input type="text" id="nombreapellidos" class="input-padron">
 
-            <input type="submit"  value="Enviar Formulario">
+            <label for="correoelectronico">Ingrese Correro electronico </label>
+            <input type="text" id="correoelectronico" class="input-padron">
+
+            <label for="telefono">Ingrese su Numero de Telefono</label>
+            <input type="text" id="telefono" class="input-padron">
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron"></textarea>
+
+            <div>
+                <p>Cómo le gustaria que los contactemos?</p>
+                <label for="radio-email"><input name="contacto" type="radio" id="radio-email">Email</label>
+                <label for="radio-telefono"><input name="contacto" type="radio" id="radio-telefono">Teléfono</label>
+                <label for="radio-WhatsApp"><input name="contacto" type="radio" id="radio-WhatsApp">WhatsApp</label>
+            </div>
+            <div>
+                <p>¿En cual horario le gustaria ser atendido?</p>
+                <select>
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+            </div>
+            <label><input name="checkbox" type="checkbox">Le gustaria recibir novedades de la barberia alura?</label>
+
+
+
+
+            <input type="submit" value="Enviar Formulario">
 
 
         </form>
-        </main>
+    </main>
     <footer>
         <img src="imagenes/logo-blanco.png">
-        <p class="copyright">&copy; Copyright Barberia Alura  - 2022</p>
+        <p class="copyright">&copy; Copyright Barberia Alura - 2022</p>
     </footer>
-    
+
 </body>
+
 </html>
