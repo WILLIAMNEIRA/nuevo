@@ -72,8 +72,9 @@ nav a:hover{
 }
 footer{
     text-align: center;
-   background: url(/imagenes/bg.jpg) ;
-    padding: 40px;
+    background: rgb(13,13,13);
+    background: linear-gradient(90deg, rgba(13,13,13,1) 0%, rgba(0,0,0,1) 41%, rgba(255,0,52,1) 96%);
+    padding: 10px;
 }
 .copyright{
     color: #fff;
